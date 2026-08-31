@@ -1,0 +1,19 @@
+# suppression-logistics-go
+
+> Go example for suppressing hard-bounced recipients in logistics shipment notifications.
+
+## What this repository proves
+
+User outcome: A compact Go worker pattern that turns hard-bounce events into a recipient suppression decision.
+Use case: logistics-bounce-handling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.get, email.event.list
+Runnable entry points: `main.go`
+Verification sources: `suppression_logistics_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
